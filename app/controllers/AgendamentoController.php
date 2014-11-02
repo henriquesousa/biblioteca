@@ -42,6 +42,15 @@ class AgendamentoController extends \BaseController {
 	{
 		$input = Input::all();
 		$rules = Agendamento::$rules;
+		$entrega = Input::get('entrega');
+		 if($entrega != ''){
+		 	$entrega = $entrega;
+		 }
+		 else
+		 {
+		 	$entrega = NULL;
+		 }
+
 
 		//dd($input);
 
@@ -57,7 +66,7 @@ class AgendamentoController extends \BaseController {
 			$agendamento = new Agendamento;
 			$agendamento->id       		  = Input::get('id');
 			$agendamento->saida       	  = new DateTime;
-			$agendamento->entrega         = '';
+			$agendamento->entrega         = $entrega;
 			$agendamento->turno           = Input::get('turno');
 			$agendamento->horario         = Input::get('horario');
 			$agendamento->material_id     = Input::get('material_id');
