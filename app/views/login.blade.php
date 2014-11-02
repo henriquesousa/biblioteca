@@ -78,7 +78,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">                                
                                 <div class="row-fluid user-row text-center">
-                                    {{ HTML::image('/img/pronatec.jpg', 'Logomarca', array('class' => 'img', 'width' => '200px')) }}
+                                    {{ HTML::image('/img/pronatec2.jpg', 'Logomarca', array('class' => 'img', 'width' => '100%', 'height' => '130px')) }}
                                 </div>
                             </div>
                             <div class="panel-body">
