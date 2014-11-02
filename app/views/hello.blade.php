@@ -3,7 +3,7 @@
 			
 			
 
-			<div class="container">
+			
 				<div class="row">
 					<div class="col-md-5 text-center">
 
@@ -15,10 +15,10 @@
 
 						<div class="text-center col-md-12">
 						<h4><b>Escola Estadual Joel Mares</b></h4>
-						<h6>Ensino Fundamental e Ensino Medio</h6>
+						<h6>Ensino Fundamental e Ensino Médio</h6>
 						<h6>Criada pelo decreto n 37.321 de 05-10-1995</h6>
 						<br>
-						<h6>Rua Flaviano Antunes Reis, 245 - Bairro São Francisco, Almenara - MG</h6>
+						<h6>Rua Flaviano Antunes Reis, 245 - Bairro São Francisco, Almenara-MG</h6>
 						<h6>Telefax: (0xx33) 3721 - 2484 / email: <a href="mailto:eejoelmares@gmail.com"> eejoelmares@gmail.com</h6>
 
 						</div>
@@ -40,7 +40,7 @@
 
 					
 				</div>
-			</div>
+			
 		</div>
 
 
