@@ -5,17 +5,13 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-5">
-					<h1>Bem-vindo!</h1>
+					<div class="col-md-5 text-center">
 
+					<h1>Biblioteca Digital</h1>
+					<h2><b>Seja Bem-vindo! </b></h2>
+					<h2><small><u>{{ Auth::user()->nome }}</u></small></h2>
 					
 						<br>
-
-						<h2>Biblioteca Digital</h2>
-
-						<h3><u>{{ Auth::user()->nome }}</u></h3>
-
-						
 
 						<div class="text-center col-md-12">
 						<h4><b>Escola Estadual Joel Mares</b></h4>

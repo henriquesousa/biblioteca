@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 
-    <title>Project name</title> 
+    <title>Biblioteca Digital</title> 
 
     <meta charset="utf-8">
 
