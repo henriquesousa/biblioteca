@@ -30,7 +30,6 @@
 		public static $rulesUpdate = [
 
 			'saida' 			   => 'required',
-			'entrega' 			   => 'required',
 			'turno' 			   => 'required',
 			'horario' 			   => 'required'
 		];
