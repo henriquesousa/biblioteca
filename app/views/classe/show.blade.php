@@ -1,7 +1,7 @@
 <h1>{{ $classe->name }}</h1>
 
 <div class="jumbotron text-center">
-	<h2><u>Escola Estadual ....</u></h2>
+	<h2><u>Escola Estadual Joel Mares</u></h2>
 	<p>
 		<strong>Serie:</strong> {{ $classe->serie }}<br>
 		<strong>Turno:</strong> {{ $classe->turno }}<br>

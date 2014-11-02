@@ -1,7 +1,8 @@
 <h1>{{ $endereco->name }}</h1>
 
 <div class="jumbotron text-center">
-	<h2>{{ $endereco->name }}</h2>
+<h2><u>Escola Estadual Joel Mares</u></h2>
+	
 	<p>
 		<strong>Tipo:</strong> {{ $endereco->tipo }}<br>
 <strong>Logradouro:</strong> {{ $endereco->logradouro }}<br>

@@ -1,7 +1,8 @@
 <h1>{{ $emprestimo->name }}</h1>
 
 <div class="jumbotron text-center">
-	<h2>{{ $emprestimo->name }}</h2>
+	<h2><u>Escola Estadual Joel Mares</u></h2>
+	
 	<p>
 		<strong>Aluno :</strong> {{ $emprestimo->aluno->nome }}<br>
 		<strong>Livro :</strong> {{ $emprestimo->livro->nome}}<br>

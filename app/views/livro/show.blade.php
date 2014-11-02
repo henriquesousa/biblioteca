@@ -12,7 +12,7 @@
 	        </div>
 	        
 	        <div class="col-md-6">
-	        	<h3><u>Escola Estadual TalTalTal</u></h3>
+	        	<h3><u>Escola Estadual Joel Mares</u></h3>
 	        	<br/>
 	            <h4><b>{{ $livro->nome }}</b></h4>
 	            <h4>Editora: <b>{{ $livro->editora }}</b></h4>

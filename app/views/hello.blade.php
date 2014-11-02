@@ -16,9 +16,9 @@
 						<div class="text-center col-md-12">
 						<h4><b>Escola Estadual Joel Mares</b></h4>
 						<h6>Ensino Fundamental e Ensino Medio</h6>
-						<h6>Criado pelo decreto n 37.321 de 05-10-1995</h6>
+						<h6>Criada pelo decreto n 37.321 de 05-10-1995</h6>
 						<br>
-						<h6>Rua Flavio Antunes Reis, 245 - Bairro São Francisco</h6>
+						<h6>Rua Flaviano Antunes Reis, 245 - Bairro São Francisco, Almenara - MG</h6>
 						<h6>Telefax: (0xx33) 3721 - 2484 / email: <a href="mailto:eejoelmares@gmial.com"> eejoelmares@gmial.com</h6>
 
 						</div>

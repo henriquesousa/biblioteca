@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 
-    <title>Project name</title> 
+    <title>Biblioteca Digital</title> 
 
     <meta charset="utf-8">
 
@@ -77,8 +77,8 @@
                     <div class="col-md-4 col-md-offset-4">
                         <div class="panel panel-default">
                             <div class="panel-heading">                                
-                                <div class="row-fluid user-row">
-                                    {{ HTML::image('/img/pronatec.jpg', 'Logomarca', array('class' => 'img', 'width' => '150px')) }}
+                                <div class="row-fluid user-row text-center">
+                                    {{ HTML::image('/img/pronatec.jpg', 'Logomarca', array('class' => 'img', 'width' => '200px')) }}
                                 </div>
                             </div>
                             <div class="panel-body">

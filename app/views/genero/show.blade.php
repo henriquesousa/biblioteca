@@ -1,7 +1,7 @@
 <h1>{{ $genero->name }}</h1>
 
 <div class="jumbotron text-center">
-	<h2>{{ $genero->name }}</h2>
+	<h2><u>Escola Estadual Joel Mares</u></h2>
 	<p>
 		<strong>Descricao:</strong> {{ $genero->descricao }}<br>
 

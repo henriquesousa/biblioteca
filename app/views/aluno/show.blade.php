@@ -11,7 +11,7 @@
 	        </div>
 	        
 	        <div class="col-md-7">
-	        	<h3><u>Escola Estadual TalTalTal</u></h3>
+	        	<h3><u>Escola Estadual Joel Mares</u></h3>
 	        	<br/>
 	            <h4><b>{{ $aluno->nome }}</b></h4>
 	            <h4>Pai: <b>{{ $aluno->pai }}</b></h4>
