@@ -187,6 +187,13 @@
     			    <p>Agendamento</p>
                 </a>
             </div>
+            <div class="btn-group">
+                <a  href='{{ URL::to("logout") }}' type="button" class="btn btn-nav">
+                    <span class="glyphicon glyphicon-off"></span>
+    			    <p>Sair</p>
+                </a>
+            </div>
+            
             
         </div>
 	</div>
