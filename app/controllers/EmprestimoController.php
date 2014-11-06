@@ -74,7 +74,7 @@ class EmprestimoController extends \BaseController {
 			$emprestimo->entrega 		= $teste->add( new DateInterval( "P3D" ) );
 			$emprestimo->entrega_real   = NULL;
 			$emprestimo->multa   		= 0;
-			$emprestimo->funcionario_id = '1';//Input::get('funcionario_id');
+			$emprestimo->funcionario_id = Auth::user()->id;
 			$emprestimo->aluno_id       = Input::get('aluno_id');
 			$emprestimo->livro_id       = Input::get('livro_id');
 
@@ -178,7 +178,6 @@ class EmprestimoController extends \BaseController {
 				$emprestimo->entrega        = date($entrega);
 				$emprestimo->entrega_real   = $entrega_real;
 				$emprestimo->multa       	= $multa;
-				$emprestimo->funcionario_id = Auth::user()->id;
 				$emprestimo->aluno_id       = Input::get('aluno_id');
 				$emprestimo->livro_id       = Input::get('livro_id');
 
