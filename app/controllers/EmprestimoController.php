@@ -140,6 +140,7 @@ class EmprestimoController extends \BaseController {
 		if($input['entrega_real'] != "") 
 		{
 			$entrega_real = implode("-",array_reverse(explode("/",$input['entrega_real'])));
+			$entrega = implode("-",array_reverse(explode("/",$input['entrega'])));
 			//$entrega_real = date($entrega_real);
 
 			$saida = new DateTime($saida);
