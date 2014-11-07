@@ -7,7 +7,7 @@
 		<strong>Saida:</strong> {{ date('d/m/Y', strtotime($agendamento->saida)) }}<br>
 		<strong>Entrega:</strong> {{ date('d/m/Y', strtotime($agendamento->entrega)) }}
 		@if($agendamento->entrega > $agendamento->saida)
-		{{ date('d/m/Y', strtotime($agendamento->entrega) }}
+		{{ date('d/m/Y', strtotime($agendamento->entrega)) }}
 		@endif
 		<br>
 		<strong>Turno:</strong> {{ $agendamento->turno }}<br>
