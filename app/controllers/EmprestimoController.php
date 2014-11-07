@@ -140,9 +140,7 @@ class EmprestimoController extends \BaseController {
 		if($input['entrega_real'] != "") 
 		{
 			$entrega_real = implode("-",array_reverse(explode("/",$input['entrega_real'])));
-			$entrega = implode("-",array_reverse(explode("/",$input['entrega'])));
-			//$entrega_real = date($entrega_real);
-
+			
 			$saida = new DateTime($saida);
 			$entrega_real = new DateTime($entrega_real);
 
@@ -214,9 +212,9 @@ class EmprestimoController extends \BaseController {
 			$emprestimo = Emprestimo::find($id);
 			$emprestimo->saida       	=  date($saida);
 			$emprestimo->entrega        = date($entrega);
-			$emprestimo->entrega_real   = date($entrega_real);
+			$emprestimo->entrega_real   = $entrega_real;
 			$emprestimo->multa       	= $multa;
-			$emprestimo->funcionario_id = '1';//Input::get('funcionario_id');
+			$emprestimo->funcionario_id = Auth::user()->id;
 			$emprestimo->aluno_id       = Input::get('aluno_id');
 			$emprestimo->livro_id       = Input::get('livro_id');
 
