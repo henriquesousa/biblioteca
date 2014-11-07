@@ -7,7 +7,7 @@
 		<strong>Aluno :</strong> {{ $emprestimo->aluno->nome }}<br>
 		<strong>Livro :</strong> {{ $emprestimo->livro->nome}}<br>
 		<strong>Saida:</strong> {{ date('d/m/Y', strtotime($emprestimo->saida)) }}<br>
-		<strong>Previsão:</strong> {{ date('d/m/Y', strtotime($emprestimo->previsao)) }}<br> 
+		<strong>Previsão:</strong> {{ date('d/m/Y', strtotime($emprestimo->entrega)) }}<br> 
 		<strong>Entrega:</strong> @if($emprestimo->entrega_real > $emprestimo->saida)
 		{{ date('d/m/Y', strtotime($emprestimo->entrega_real)) }}
 		@endif<br>
