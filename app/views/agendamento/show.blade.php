@@ -4,8 +4,12 @@
 	<p>
 		<strong>Professor:</strong> {{ $agendamento->professor->nome }}<br>
 		<strong>Material:</strong> {{ $agendamento->material->nome }}<br>
-		<strong>Saida:</strong> {{ $agendamento->saida }}<br>
-		<strong>Entrega:</strong> {{ $agendamento->entrega }}<br>
+		<strong>Saida:</strong> {{ date('d/m/Y', strtotime($agendamento->saida)) }}<br>
+		<strong>Entrega:</strong> {{ date('d/m/Y', strtotime($agendamento->entrega)) }}
+		@if($agendamento->entrega > $agendamento->saida)
+		{{ date('d/m/Y', strtotime($agendamento->entrega) }}
+		@endif
+		<br>
 		<strong>Turno:</strong> {{ $agendamento->turno }}<br>
 		<strong>Horario:</strong> {{ $agendamento->horario }}<br>
 		

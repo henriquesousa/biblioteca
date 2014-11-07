@@ -213,7 +213,6 @@ class EmprestimoController extends \BaseController {
 			$emprestimo->saida       	=  date($saida);
 			$emprestimo->entrega        = date($entrega);
 			$emprestimo->multa       	= $multa;
-			$emprestimo->funcionario_id = Auth::user()->id;
 			$emprestimo->aluno_id       = Input::get('aluno_id');
 			$emprestimo->livro_id       = Input::get('livro_id');
 

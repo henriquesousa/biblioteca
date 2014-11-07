@@ -147,7 +147,6 @@ class AgendamentoController extends \BaseController {
 			$agendamento->entrega         = date($entrega);
 			$agendamento->material_id     = Input::get('material_id');
 			$agendamento->professor_id    = Input::get('professor_id');
-			$agendamento->funcionario_id  = '1';//Input::get('funcionario_id');
 
 			$agendamento->save();
 
