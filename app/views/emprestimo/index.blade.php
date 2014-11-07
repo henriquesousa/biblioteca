@@ -39,8 +39,8 @@
 							<td> {{ $value->livro->nome }} </td>
 							<td class="text-center"> {{ date('d/m', strtotime($value->saida)) }}</td>
 							<td class="text-center"> {{ date('d/m', strtotime($value->entrega)) }} </td>
-                            <td class="text-center"> @if($alue->entrega_real > $alue->saida)
-                                {{ date('d/m/Y', strtotime($alue->entrega_real)) }}
+                            <td class="text-center"> @if($value->entrega_real > $value->saida)
+                                {{ date('d/m/Y', strtotime($value->entrega_real)) }}
                                 @endif </td>
 							<td> {{ $value->multa }} </td>
 							<td> {{ $value->aluno->nome }} </td>
