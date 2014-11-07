@@ -22,7 +22,6 @@
 				<table class="table table-striped table-hover table-list-search">
 					<thead>
 						<tr>
-							<th>Id</th>
 							<th>Titulo</th>
 							<th>Editora</th>
 							<th>Ano</th>
@@ -38,7 +37,6 @@
 					<tbody>
 					@foreach($livro as $key => $value)
 						<tr>
-							<td> {{ $value->id}} </td>
 							<td> {{ $value->nome}} </td>
 							<td> {{ $value->editora}} </td>
 							<td> {{ $value->ano}} </td>
