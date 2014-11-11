@@ -108,7 +108,7 @@ class AlunoController extends \BaseController {
 	public function edit($id)
 	{
 		// get the aluno
-		$aluno = Aluno::with('endereco', 'classe')->first();
+		$aluno = Aluno::with('endereco', 'classe')->find($id);
 		$classes = Classe::all();
 
 		// show the edit form and pass the aluno
