@@ -147,9 +147,9 @@ class AlunoController extends \BaseController {
 
 			$endereco = Endereco::findOrFail($input['endereco']);
 			$endereco->tipo        = ucwords(strtolower(Input::get('tipo')));
-			$endereco->logradouro  = ucwords(strtolower(Input::get('logradouro'));
-			$endereco->bairro      = ucwords(strtolower(Input::get('bairro'));
-			$endereco->cidade      = ucwords(strtolower(Input::get('cidade'));
+			$endereco->logradouro  = ucwords(strtolower(Input::get('logradouro')));
+			$endereco->bairro      = ucwords(strtolower(Input::get('bairro')));
+			$endereco->cidade      = ucwords(strtolower(Input::get('cidade')));
 			$endereco->cep         = Input::get('cep');
 			$endereco->uf          = strtoupper(strtolower(Input::get('uf')));
 
