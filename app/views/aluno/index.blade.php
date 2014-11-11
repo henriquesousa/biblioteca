@@ -19,24 +19,24 @@
 			<br/>
     		<div class="table-responsive">
 				<table class="table table-striped table-hover table-list-search">
-					<thead>
-						<tr>
+					<thead >
+						<tr class="text-center">
 							<th>Id</th>
 							<th>Nome</th>
 							<th>Série</th>
 							<th>Turno</th>
 							<th>Turma</th>
-							<th width="300px">Ações</th>
+							<th>Ações</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody >
 					@foreach($aluno as $key => $value)
-						<tr>
+						<tr >
 							<td> {{ $value->id}} </td>
 							<td> {{ $value->nome}} </td>
 							<td> {{ $value->classe->serie}} </td>
 							<td> {{ $value->classe->turno}} </td>
-							<td> {{ $value->classe->turma}} </td>
+							<td > {{ $value->classe->turma}} </td>
 
 
 							<!-- we will also add show, edit, and delete buttons -->
@@ -45,16 +45,18 @@
 								<!-- delete the aluno (uses the destroy method DESTROY /aluno/{id} -->
 								<!-- we will add this later since its a little more complicated than the other two buttons -->
 
-								{{ Form::open(array('url' => 'aluno/' . $value->id, 'class' => 'pull-right')) }}
-									{{ Form::hidden('_method', 'DELETE') }}
-									{{ Form::submit('x', array('class' => 'btn btn-sm btn-danger')) }}
-								{{ Form::close() }}
-
+								
 								<!-- show the aluno (uses the show method found at GET /aluno/{id} -->
-								<a class="btn btn-sm btn-success pull-right" href="{{ URL::to('aluno/' . $value->id) }}"><i class="glyphicon glyphicon-eye-open"></i></a>
+								<a class="btn btn-sm btn-success" href="{{ URL::to('aluno/' . $value->id) }}"><i class="glyphicon glyphicon-eye-open"></i></a>
 
 								<!-- edit this aluno (uses the edit method found at GET /aluno/{id}/edit -->
-								<a class="btn btn-sm btn-info pull-right" href="{{ URL::to('aluno/' . $value->id . '/edit') }}"><i class="glyphicon glyphicon-pencil"></i></a>
+								<a class="btn btn-sm btn-info" href="{{ URL::to('aluno/' . $value->id . '/edit') }}"><i class="glyphicon glyphicon-pencil"></i></a>
+
+                                {{ Form::open(array('url' => 'aluno/' . $value->id, 'class' => 'btn')) }}
+                                    {{ Form::hidden('_method', 'DELETE') }}
+                                    {{ Form::submit('x', array('class' => 'btn btn-sm btn-danger')) }}
+                                {{ Form::close() }}
+
 
 							</td>
 						</tr>

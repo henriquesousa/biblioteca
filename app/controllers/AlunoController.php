@@ -156,7 +156,7 @@ class AlunoController extends \BaseController {
 			$endereco->save();
 
 			// redirect
-			Session::flash('message', 'Aluno cadastrado com sucesso!');
+			Session::flash('message', 'Aluno editado com sucesso!');
 			return Redirect::to('aluno');
 		}
 	}
