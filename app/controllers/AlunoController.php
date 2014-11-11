@@ -55,20 +55,20 @@ class AlunoController extends \BaseController {
 	    {
 
 			$endereco = new Endereco;
-			$endereco->tipo        = Input::get('tipo');
-			$endereco->logradouro  = ucwords(Input::get('logradouro'));
-			$endereco->bairro      = ucwords(Input::get('bairro'));
-			$endereco->cidade      = ucwords(Input::get('cidade'));
+			$endereco->tipo        = ucwords(strtolower(Input::get('tipo')));
+			$endereco->logradouro  = ucwords(strtolower(Input::get('logradouro')));
+			$endereco->bairro      = ucwords(strtolower(Input::get('bairro')));
+			$endereco->cidade      = ucwords(strtolower(Input::get('cidade')));
 			$endereco->cep         = Input::get('cep');
-			$endereco->uf          = strtoupper(Input::get('uf'));
+			$endereco->uf          = strtoupper(strtolower(Input::get('uf')));
 
 			$endereco->save();
 
 			$aluno = new Aluno;
 			$aluno->id       	= Input::get('id');
-			$aluno->nome        = ucwords(Input::get('nome'));
-			$aluno->pai         = ucwords(Input::get('pai'));
-			$aluno->mae         = ucwords(Input::get('mae'));
+			$aluno->nome        = ucwords(strtolower(Input::get('nome')));
+			$aluno->pai         = ucwords(strtolower(Input::get('pai')));
+			$aluno->mae         = ucwords(strtolower(Input::get('mae')));
 			$aluno->endereco_id = $endereco->id;
 			$aluno->classe_id   = Input::get('classe_id');
 
@@ -138,20 +138,20 @@ class AlunoController extends \BaseController {
 	    {
 	    	$aluno = Aluno::findOrFail($id);
 			$aluno->id       	= Input::get('id');
-			$aluno->nome        = ucwords(Input::get('nome'));
-			$aluno->pai         = ucwords(Input::get('pai'));
-			$aluno->mae         = ucwords(Input::get('mae'));
+			$aluno->nome        = ucwords(strtolower(Input::get('nome')));
+			$aluno->pai         = ucwords(strtolower(Input::get('pai')));
+			$aluno->mae         = ucwords(strtolower(Input::get('mae')));
 			$aluno->classe_id   = Input::get('classe_id');
 
 			$aluno->save();
 
 			$endereco = Endereco::findOrFail($input['endereco']);
-			$endereco->tipo        = Input::get('tipo');
-			$endereco->logradouro  = ucwords(Input::get('logradouro'));
-			$endereco->bairro      = ucwords(Input::get('bairro'));
-			$endereco->cidade      = ucwords(Input::get('cidade'));
+			$endereco->tipo        = ucwords(strtolower(Input::get('tipo')));
+			$endereco->logradouro  = ucwords(strtolower(Input::get('logradouro'));
+			$endereco->bairro      = ucwords(strtolower(Input::get('bairro'));
+			$endereco->cidade      = ucwords(strtolower(Input::get('cidade'));
 			$endereco->cep         = Input::get('cep');
-			$endereco->uf          = strtoupper(Input::get('uf'));
+			$endereco->uf          = strtoupper(strtolower(Input::get('uf')));
 
 			$endereco->save();
 

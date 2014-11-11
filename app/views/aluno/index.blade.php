@@ -23,7 +23,6 @@
 						<tr>
 							<th>Id</th>
 							<th>Nome</th>
-							<th>Cpf</th>
 							<th>Série</th>
 							<th>Turno</th>
 							<th>Turma</th>
@@ -35,7 +34,6 @@
 						<tr>
 							<td> {{ $value->id}} </td>
 							<td> {{ $value->nome}} </td>
-							<td> {{ $value->cpf}} </td>
 							<td> {{ $value->classe->serie}} </td>
 							<td> {{ $value->classe->turno}} </td>
 							<td> {{ $value->classe->turma}} </td>
