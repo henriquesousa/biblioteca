@@ -60,7 +60,7 @@
 				</table>
 			</div> 
 
-			<smalll>generoes Cadastrados:</small> <b>{{ $quant }}</b>
+			<smalll>Gêneros cadastrados:</small> <b>{{ $quant }}</b>
 
 		</div>
 

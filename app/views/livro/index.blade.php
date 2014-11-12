@@ -74,7 +74,7 @@
 				</table>
 			</div> 
 
-			<smalll>livros Cadastrados:</small> <b>{{ $quant }}</b>
+			<smalll>Livros cadastrados:</small> <b>{{ $quant }}</b>
 
 		</div>
 

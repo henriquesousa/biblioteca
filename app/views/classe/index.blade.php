@@ -63,7 +63,7 @@
 				</table>
 			</div> 
 
-			<smalll>Classes Cadastrados:</small> <b>{{ $quant }}</b>
+			<smalll>Classes cadastradas:</small> <b>{{ $quant }}</b>
 
 		</div>
 

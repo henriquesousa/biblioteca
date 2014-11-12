@@ -65,7 +65,7 @@
 				</table>
 			</div> 
 
-			<smalll>Funcionários Cadastrados:</small> <b>{{ $quant }}</b>
+			<smalll>Funcionários cadastrados:</small> <b>{{ $quant }}</b>
 
 		</div>
 

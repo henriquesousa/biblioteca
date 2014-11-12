@@ -60,7 +60,7 @@
 				</table>
 			</div> 
 
-			<smalll>Professores Cadastrados:</small> <b>{{ $quant }}</b>
+			<smalll>Professores cadastrados:</small> <b>{{ $quant }}</b>
 
 		</div>
 

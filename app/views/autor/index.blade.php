@@ -60,7 +60,7 @@
 				</table>
 			</div> 
 
-			<smalll>Autores Cadastrados:</small> <b>{{ $quant }}</b>
+			<smalll>Autores cadastrados:</small> <b>{{ $quant }}</b>
 
 		</div>
 
