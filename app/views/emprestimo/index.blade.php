@@ -1,7 +1,7 @@
 
 
 	<div class="row text-center">
-		<h1>Emprestimos</h1><hr>
+		<h1>Empréstimos</h1><hr>
         <div class="col-md-3">
             <form action="#" method="get">
                 <div class="input-group">
@@ -72,7 +72,7 @@
 				</table>
 			</div> 
 
-			<smalll>emprestimos Cadastrados:</small> <b>{{ $quant }}</b> {{ $emprestimo->links()}}
+			<smalll>Empréstimos cadastrados:</small> <b>{{ $quant }}</b> {{ $emprestimo->links()}}
 
 		</div>
 

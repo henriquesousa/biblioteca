@@ -106,7 +106,7 @@
     	<!-- edit this aluno (uses the edit method found at GET /aluno/{id}/edit -->
       <a class="btn btn-sm btn-success" href="{{ URL::to('aluno') }}">Voltar</a>
       {{ Form::reset('Limpar!', array('class' => 'btn btn-sm btn-danger')) }}
-      {{ Form::submit('Cadastrar!', array('class' => 'btn btn-sm btn-primary')) }}
+      {{ Form::submit('Editar!', array('class' => 'btn btn-sm btn-primary')) }}
 
 	{{ Form::close() }}
 </div>
