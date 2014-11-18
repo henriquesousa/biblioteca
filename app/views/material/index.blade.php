@@ -64,7 +64,7 @@
 				</table>
 			</div> 
 
-			<smalll>Materials cadastrados:</small> <b>{{ $quant }}</b>
+			<smalll>Materiais cadastrados:</small> <b>{{ $quant }}</b>
 
 		</div>
 
